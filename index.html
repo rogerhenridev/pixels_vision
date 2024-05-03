@@ -4,32 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixels Vision</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarala:wght@400;700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Pixels Vision</h1>
-        <nav>
+        <div class="container">
             <ul>
-                <li>Ideias</li>
-                <li>Contato</li>
-                <li>Explorar</li>
+                <li>
+                    <a href="#about">Ideias</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+                <li>
+                    <a href="#login">Cadastre-se</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <img src="./panoramico.jpg" alt="imagem panoramica, com nuvens e montanhas">
-        <h2>Fotos tiradas por profissionais, ensinando voçê a fazer o mesmo. </br>Um lugar para compartilhar experiências.</h2>
-        <form action="action_page.php">
-            <label for="search">Pesquisar imagem:</label>
-            <input type="search" id="search" name="search">
-            <input type="submit" value="pesquisar imagem">
-        </form>
-    <section>
-        <div>
-        <h2>Tenha novas ideias</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat id ullam consequuntur tempore dicta exercitationem provident sequi amet, ad in quasi pariatur tenetur quos neque minus voluptates, cupiditate blanditiis!
-        </p>
         </div>
-    </section>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 id="about">Ideias</h2>
+            <p>Compartilhe suas ideias e inspirações fotográficas conosco.</p>
+            <h3>Inspirações</h3>
+            <div class="gallery">
+                <img src="./ceu.jpeg" alt="Imagem do ceu">
+                <img src="./montain.jpg" alt="foto de montanha">
+                <img src="./pessoa.jpeg" alt="foto de uma mulher">
+                <img src="./plantacao.jpeg" alt="foto do sol batendo na plantação">
+                <img src="./p&b.jpeg" alt="foto preta e branca de um homem na escada">
+            </div>
+        </section>
+
+        <section>
+            <h2 id="contact">Contato</h2>
+            <ul>
+                <li>Email: contato@pixelsvision.com</li>
+                <li>Telefone: (19)99998-1111</li>
+                <li>Endereço: Rua das Fotografias, n° 123, SP.</li>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" title="Siga-nos no Instagram">
+                            <img src="./instagram.png" alt="Logo do Instagram" />
+                    </li>
+                    <li>                        <a href="#" title="Siga-nos no Facebook">
+                            <img src="./facebook.png" alt="Logo  do Facebook" />
+                    </li>
+                </ul>
+        </section>
+
+        <section>
+            <h2 id="login">Cadastre-se</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Nome e Sobrenome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="E-mail" name="email" required>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </div>
 </body>
 </html>

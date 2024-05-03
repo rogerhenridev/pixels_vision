@@ -1,0 +1,84 @@
+body {
+    font-family: "Sarala", cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #e0e0e0);
+}
+
+header {
+    background-color: #333;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.container li a {
+    color: #000000;
+    text-decoration: none;
+}
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input[type="text"], input[type="email"], input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: calc(20% - 10px);
+    margin: 5px;
+    display: 200px;
+}
+
+h3 {
+    font-family: "Sarala", sans-serif;
+    margin-top: 20px;
+}
+
+.social-links img {
+    height: 20px;
+}
